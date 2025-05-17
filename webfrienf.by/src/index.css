@@ -1,0 +1,45 @@
+:root {
+  --color-background: #dfe2e7;
+  --color-header: #a13531;
+  --color-subHeader: #f6e8d1;
+  --color-text: #244056;
+}
+
+@font-face {
+  font-family: 'Headers';
+  src: url('../src/assets/Fonts/Headers/Alfa_Slab_One/AlfaSlabOne-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Content-reg';
+  src: url('../src/assets/Fonts/Content/PT_Sans/PTSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Content-bold';
+  src: url('../src/assets/Fonts/Content/PT_Sans/PTSans-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Content-italic';
+  src: url('../src/assets/Fonts/Content/PT_Sans/PTSans-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+html,
+body {
+  background: var(--color-background);
+  font-family: 'Content-reg', serif;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  color: var(--color-text)
+}
