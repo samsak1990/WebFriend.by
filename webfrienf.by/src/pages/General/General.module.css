@@ -12,12 +12,19 @@
     gap: 50px;
 }
 
+/* .general__leftBox h1, */
+.general__leftBox h2 {
+    max-width: 600px;
+}
+
 .general__leftBox h1 {
     font-size: 45px;
     font-weight: bold;
+    max-width: 540px;
 }
 
 .general__leftBox h2 {
+    font-weight: normal;
     font-size: 25px;
     color: var(--color-header)
 }
@@ -78,4 +85,31 @@
     padding: 20px 60px;
     background: url('../../assets/Socials/youtube.svg') center / contain no-repeat;
     background-color: var(--color-header);
+}
+
+/*Typing animation*/
+
+.typingAnimation {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingAnimation 4s steps(35) 1.5s Backwards, caret 0.5s step-end infinite alternate;
+    border-right: 3px solid var(--color-text);
+    text-align: left;
+}
+
+@keyframes typingAnimation {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 540px;
+    }
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
 }
