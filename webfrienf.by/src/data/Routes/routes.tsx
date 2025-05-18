@@ -1,8 +1,8 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import { MENU_LIST } from "../Menu/menulist";
 import { Blog } from "../../pages/Blog/Blog";
-
 import { App } from "../../App";
+import { General } from "../../pages/General/General";
 
 export const routes = createBrowserRouter([
     {
@@ -10,7 +10,11 @@ export const routes = createBrowserRouter([
         element: <App />,
         children: [
             {
-                path: MENU_LIST.find(item => item.nameEn === 'Blog')?.pathTo || '/',
+                path: '/',
+                element: <General />,
+            },
+            {
+                path: MENU_LIST.find(item => item.nameEn === 'Blog')?.pathTo || '/blog',
                 element: <Blog />,
             },
             {

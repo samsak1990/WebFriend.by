@@ -2,3 +2,12 @@
     width: 150px;
     aspect-ratio: 16 / 8
 }
+
+.logo__link {
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+.logo__link:hover {
+    opacity: .8;
+}

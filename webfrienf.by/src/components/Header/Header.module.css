@@ -2,4 +2,22 @@
     display: flex;
     justify-content: space-between;
     max-height: 100px;
+    align-items: center;
+}
+
+.header__boxMenu {
+    display: flex;
+    align-items: center;
+    gap: 50px
+}
+
+.header__lang {
+    display: block;
+    height: 35px;
+    width: 35px;
+    background: url('../../assets/flagRU.svg') center / cover no-repeat;
+}
+
+.header__lang-en {
+    background: url('../../assets/flagUK.svg') center / cover no-repeat;
 }

@@ -1,0 +1,24 @@
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 35px
+}
+
+.header__menu li {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.header__menu a {
+    color: var(--color-text);
+    transition: color .3s ease-in-out;
+}
+
+.header__menu a:hover {
+    color: var(--color-header)
+}
+
+.header__menu a.active {
+    color: var(--color-header);
+}
