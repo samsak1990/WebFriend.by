@@ -11,7 +11,7 @@ export const Services: React.FC<ILang> = ({ lang }) => {
   const data: TServices[] = lang === "ru" ? content.en : content.ru;
 
   return (
-    <div className={styles.service__wrapper}>
+    <div className={styles.services__wrapper}>
       {data.map((item, index) => (
         <ServiceCard key={index} data={item} />
       ))}

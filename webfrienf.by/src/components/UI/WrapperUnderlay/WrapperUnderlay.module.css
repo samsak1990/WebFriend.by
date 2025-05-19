@@ -1,5 +1,5 @@
 .wrapper__underlay {
     width: 100%;
     min-height: 100px;
-    background-color: rgba(36, 64, 86, .2);
+    background-color: var(--bg-underlay)
 }

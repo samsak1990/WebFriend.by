@@ -7,5 +7,15 @@ interface IServiceCardProp {
 }
 
 export const ServiceCard: React.FC<IServiceCardProp> = ({ data }) => {
-  return <div className={styles.serviceCard}></div>;
+  return (
+    <div className={styles.service__card}>
+      <img src={data.img} alt="" />
+      <h3>{data.type}</h3>
+      <ul className={styles.ditail_list}>
+        {data.ditails.map((detail, index) => (
+          <li key={index}>{detail}</li>
+        ))}
+      </ul>
+    </div>
+  );
 };

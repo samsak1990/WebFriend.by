@@ -3,6 +3,7 @@
   --color-header: #a13531;
   --color-subHeader: #f6e8d1;
   --color-text: #244056;
+  --bg-underlay: rgba(36, 64, 86, .2);
 }
 
 @font-face {

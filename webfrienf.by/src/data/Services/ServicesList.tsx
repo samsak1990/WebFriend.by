@@ -5,7 +5,7 @@ import Site from "../../assets/Services/site.svg";
 
 export type TServices = {
   type: string;
-  svg: string;
+  img: string;
   ditails: string[];
 };
 
@@ -13,7 +13,7 @@ export const ServicesList: IGeneralContent<TServices[]> = {
   ru: [
     {
       type: "WEB-разработка",
-      svg: Dev,
+      img: Dev,
       ditails: [
         "HTML & CSS",
         "JavaScript",
@@ -25,7 +25,7 @@ export const ServicesList: IGeneralContent<TServices[]> = {
     },
     {
       type: "Сайты",
-      svg: Site,
+      img: Site,
       ditails: [
         "Лэндинг",
         "Портфолио",
@@ -37,7 +37,7 @@ export const ServicesList: IGeneralContent<TServices[]> = {
     },
     {
       type: "UX/UI Дизайн",
-      svg: Design,
+      img: Design,
       ditails: [
         "Лэндинги",
         "Веб-приложения",
@@ -49,7 +49,7 @@ export const ServicesList: IGeneralContent<TServices[]> = {
   en: [
     {
       type: "Developing",
-      svg: Dev,
+      img: Dev,
       ditails: [
         "HTML & CSS",
         "JavaScript",
@@ -61,7 +61,7 @@ export const ServicesList: IGeneralContent<TServices[]> = {
     },
     {
       type: "Web-sites",
-      svg: Site,
+      img: Site,
       ditails: [
         "Langing",
         "Portfolio",
@@ -72,7 +72,7 @@ export const ServicesList: IGeneralContent<TServices[]> = {
     },
     {
       type: "UX/UI Design",
-      svg: Design,
+      img: Design,
       ditails: [
         "Landing page",
         "Web-apps",

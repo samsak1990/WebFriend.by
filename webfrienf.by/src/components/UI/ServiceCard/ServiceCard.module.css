@@ -1,3 +1,19 @@
-.service__wrapper{}
 
-.service__card{}
+.service__card{
+    width: 265px;
+    max-height: 475px;
+    text-align: center;
+    background-color: var(--bg-underlay);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.service__card>img{
+    width: 70%;
+    filter: drop-shadow(-10px 10px 12px rgba(36, 64, 86, .8))
+
+}
+
+.ditail_list{
+    text-align: left;
+}
