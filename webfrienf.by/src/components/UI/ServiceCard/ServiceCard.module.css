@@ -1,5 +1,4 @@
-
-.service__card{
+.service__card {
     width: 265px;
     max-height: 475px;
     text-align: center;
@@ -8,12 +7,40 @@
     padding: 20px;
 }
 
-.service__card>img{
+.service__card>img {
     width: 70%;
     filter: drop-shadow(-10px 10px 12px rgba(36, 64, 86, .8))
-
 }
 
-.ditail_list{
+.service__card h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.ditail_list {
     text-align: left;
+}
+
+.service__card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.service__kind {
+    position: relative;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.service__kind::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url('../../../assets/marker.svg') center / cover no-repeat;
+    left: 0;
 }

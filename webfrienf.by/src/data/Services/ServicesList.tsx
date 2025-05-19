@@ -1,4 +1,4 @@
-import type { IGeneralContent } from "../Interfaces/IGeneral";
+import type { IGeneralContent, IHeadinxBox } from "../Interfaces/IGeneral";
 import Dev from "../../assets/Services/development.svg";
 import Design from "../../assets/Services/design.svg";
 import Site from "../../assets/Services/site.svg";
@@ -8,6 +8,18 @@ export type TServices = {
   img: string;
   ditails: string[];
 };
+
+
+export const HeadingServices: IGeneralContent<IHeadinxBox> = {
+  ru: {
+    title: 'Мои услуги',
+    description: 'Создаю веб-решения, которые работают на вас! Разработка современных веб-приложений, стильных сайтов, подбор дизайна и инфографики для маркетплейсов — всё, чтобы выделить ваш бизнес и привлечь клиентов. Работаю до тех пор, пока Вы не останитесь довольны! Хотите яркий и функциональный проект? Давате обсудим!'
+  },
+  en: {
+    title: 'Services',
+    description: 'I create web solutions that work for you! Developing modern web applications, stylish websites, design selection, and infographics for marketplaces—everything to make your business stand out and attract clients. I work until you’re fully satisfied! Want a bright and functional project? Let’s discuss it!'
+  }
+}
 
 export const ServicesList: IGeneralContent<TServices[]> = {
   ru: [
@@ -32,7 +44,6 @@ export const ServicesList: IGeneralContent<TServices[]> = {
         "Интернет-магазин",
         "Сайт-визитка",
         "Тематические сайты",
-        "Figma",
       ],
     },
     {

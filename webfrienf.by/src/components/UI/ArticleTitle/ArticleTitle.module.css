@@ -1,0 +1,12 @@
+.article__title {
+    display: inline-block;
+    font-size: 50px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--color-header);
+
+}
+
+.article__description {
+    font-size: 18px;
+    font-style: italic;
+}

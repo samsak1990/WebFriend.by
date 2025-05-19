@@ -13,7 +13,7 @@ export const ServiceCard: React.FC<IServiceCardProp> = ({ data }) => {
       <h3>{data.type}</h3>
       <ul className={styles.ditail_list}>
         {data.ditails.map((detail, index) => (
-          <li key={index}>{detail}</li>
+          <li key={index} className={styles.service__kind}>{detail}</li>
         ))}
       </ul>
     </div>

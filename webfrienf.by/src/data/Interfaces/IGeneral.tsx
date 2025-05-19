@@ -3,6 +3,11 @@ export interface IGeneralContent<T> {
   en: T;
 }
 
+export interface IHeadinxBox {
+  title: string,
+  description: string
+}
+
 export interface ILang {
   lang: string;
 }
