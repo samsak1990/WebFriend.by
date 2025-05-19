@@ -1,7 +1,6 @@
-import React from "react"
-import { Main } from "./pages/Main/Main"
-import { LanguageProvider } from "./data/Context/ProviderLang"
-
+import React from "react";
+import { Main } from "./pages/Main/Main";
+import { LanguageProvider } from "./data/Context/ProviderLang";
 
 export const App: React.FC = () => {
   return (
@@ -10,6 +9,5 @@ export const App: React.FC = () => {
         <Main />
       </LanguageProvider>
     </>
-  )
-}
-
+  );
+};
