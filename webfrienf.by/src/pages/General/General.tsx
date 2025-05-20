@@ -20,6 +20,11 @@ export const General: React.FC = () => {
       <WrapperContent>
         <Services lang={lang} />
       </WrapperContent>
+      <WrapperUnderlay>
+        <WrapperContent>
+          <About lang={lang} />
+        </WrapperContent>
+      </WrapperUnderlay>
     </>
   );
 };

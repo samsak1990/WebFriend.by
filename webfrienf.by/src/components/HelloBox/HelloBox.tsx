@@ -4,9 +4,9 @@ import Toy from "../../assets/toy.png";
 import { Social } from "../../components/UI/Socials/Social";
 import { SOCIAL_LIST } from "../../data/Socials/Socials";
 import { GENERAL_CONTENT as content, type THelloBox } from "./HelloBox.content";
-import type { ILang } from "../../data/Interfaces/IGeneral";
+import type { TLang } from "../../data/Interfaces/IGeneral";
 
-export const HelloBox: React.FC<ILang> = ({ lang }) => {
+export const HelloBox: React.FC<{ lang: TLang }> = ({ lang }) => {
   const { h1, h2, span, button_portfolio }: THelloBox =
     lang === "ru" ? content.en : content.ru;
   return (

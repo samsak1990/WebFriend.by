@@ -4,10 +4,8 @@ export interface IGeneralContent<T> {
 }
 
 export interface IHeadinxBox {
-  title: string,
-  description: string
+  title: string;
+  description: string;
 }
 
-export interface ILang {
-  lang: string;
-}
+export type TLang = "ru" | "en";

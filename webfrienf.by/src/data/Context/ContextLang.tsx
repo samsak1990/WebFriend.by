@@ -1,8 +1,9 @@
 import { createContext } from "react";
+import type { TLang } from "../Interfaces/IGeneral";
 
 interface ILanguageContext {
-    lang: string;
-    setLang: (lang: string) => void
+  lang: TLang;
+  setLang: (lang: TLang) => void;
 }
 
-export const LanguageContext = createContext<ILanguageContext | null>(null)
+export const LanguageContext = createContext<ILanguageContext | null>(null);
