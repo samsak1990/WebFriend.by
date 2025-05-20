@@ -1,15 +1,20 @@
 .service__card {
+    position: relative;
     width: 265px;
     max-height: 475px;
     text-align: center;
     background-color: var(--bg-underlay);
     border-radius: 20px;
-    padding: 20px;
+    padding: 70px 20px 20px 20px;
 }
 
 .service__card>img {
-    width: 70%;
-    filter: drop-shadow(-10px 10px 12px rgba(36, 64, 86, .8))
+    position: absolute;
+    /* top: -50%;
+    left: -50%; */
+    transform: translate(-50%, -100%);
+    width: 50%;
+    filter: drop-shadow(0px 17px 6px rgba(36, 64, 86, .8))
 }
 
 .service__card h3 {
