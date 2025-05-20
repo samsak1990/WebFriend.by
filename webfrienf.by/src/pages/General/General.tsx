@@ -4,6 +4,7 @@ import { WrapperContent } from "../../components/UI/WrapperContent/WrapperConten
 import { HelloBox } from "../../components/HelloBox/HelloBox";
 import { Services } from "../../components/Services/Services";
 import { LanguageContext } from "../../data/Context/ContextLang";
+import { About } from "../../components/About/About";
 
 export const General: React.FC = () => {
   const context = useContext(LanguageContext);
