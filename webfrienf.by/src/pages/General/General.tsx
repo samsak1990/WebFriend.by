@@ -9,7 +9,6 @@ import { About } from "../../components/About/About";
 export const General: React.FC = () => {
   const context = useContext(LanguageContext);
   const { lang } = context;
-
   return (
     <>
       <WrapperUnderlay>
