@@ -1,4 +1,4 @@
-import type { IGeneralContent, IHeadinxBox } from "../Interfaces/IGeneral";
+import type { IGeneralContent, IHeadingBox } from "../../data/Interfaces/IGeneral";
 import Dev from "../../assets/Services/development.svg";
 import Design from "../../assets/Services/design.svg";
 import Site from "../../assets/Services/site.svg";
@@ -10,7 +10,7 @@ export type TServices = {
 };
 
 
-export const HeadingServices: IGeneralContent<IHeadinxBox> = {
+export const HeadingServices: IGeneralContent<IHeadingBox> = {
   ru: {
     title: 'Мои услуги',
     description: 'Создаю веб-решения, которые работают на вас! Разработка современных веб-приложений, стильных сайтов, подбор дизайна и инфографики для маркетплейсов — всё, чтобы выделить ваш бизнес и привлечь клиентов. Работаю до тех пор, пока Вы не останитесь довольны! Хотите яркий и функциональный проект? Давате обсудим!'

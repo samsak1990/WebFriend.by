@@ -8,7 +8,6 @@ import { About } from "../../components/About/About";
 
 export const General: React.FC = () => {
   const context = useContext(LanguageContext);
-  if (!context) return null;
   const { lang } = context;
 
   return (

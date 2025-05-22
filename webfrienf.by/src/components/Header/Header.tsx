@@ -6,9 +6,6 @@ import { LanguageContext } from "../../data/Context/ContextLang";
 
 export const Header: React.FC = () => {
   const context = useContext(LanguageContext);
-
-  if (!context) return null;
-
   const { lang, setLang } = context;
   const iconLang: { class: string; title: string } =
     lang === "ru"

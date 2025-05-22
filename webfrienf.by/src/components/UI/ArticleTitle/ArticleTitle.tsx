@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './ArticleTitle.module.css'
-import type { IHeadinxBox } from '../../../data/Interfaces/IGeneral'
+import type { IHeadingBox } from '../../../data/Interfaces/IGeneral'
 
 type TArticleTitle = {
-    text: IHeadinxBox
+    text: IHeadingBox
 }
 
 export const ArticleTitle: React.FC<TArticleTitle> = ({ text }) => {
@@ -12,7 +12,8 @@ export const ArticleTitle: React.FC<TArticleTitle> = ({ text }) => {
             <h2 className={styles.article__title}>
                 {text.title}
             </h2>
-            <p className={styles.article__description}>{text.description}</p>
+            {text.description &&
+                <p className={styles.article__description}>{text.description}</p>}
         </div>
 
     )

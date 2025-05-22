@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ServiceCard.module.css";
-import type { TServices } from "../../../data/Services/ServicesList";
+import type { TServices } from "../../Services/Services.content";
 
 interface IServiceCardProp {
   data: TServices;

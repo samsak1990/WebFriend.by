@@ -6,7 +6,7 @@ import { SOCIAL_LIST } from "../../data/Socials/Socials";
 import { GENERAL_CONTENT as content, type THelloBox } from "./HelloBox.content";
 import type { TLang } from "../../data/Interfaces/IGeneral";
 
-export const HelloBox: React.FC<{ lang: TLang }> = ({ lang }) => {
+export const HelloBox: React.FC<{ lang: TLang }> = React.memo(({ lang }) => {
   const { h1, h2, span, button_portfolio }: THelloBox =
     lang === "ru" ? content.en : content.ru;
   return (
@@ -39,4 +39,4 @@ export const HelloBox: React.FC<{ lang: TLang }> = ({ lang }) => {
       </div>
     </section>
   );
-};
+});
