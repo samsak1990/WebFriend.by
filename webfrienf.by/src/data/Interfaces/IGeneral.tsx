@@ -8,4 +8,4 @@ export interface IHeadingBox {
   description?: string;
 }
 
-export type TLang = readonly ["ru" | "en"];
+export type TLang = "ru" | "en";

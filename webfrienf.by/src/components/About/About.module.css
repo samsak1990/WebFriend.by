@@ -1,1 +1,31 @@
-.about {}
+.about__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.about__content div{
+    flex-basis: 50%;
+}
+
+.about__photo img{
+    width: 70%;
+    margin-left: 25%;
+}
+
+.about_text{    
+    padding-right: 10%; 
+}
+
+.about__intro{
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.about__contacts{
+    display: flex;
+    flex-wrap: wrap;
+}

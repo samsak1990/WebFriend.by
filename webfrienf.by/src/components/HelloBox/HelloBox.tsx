@@ -7,8 +7,7 @@ import { GENERAL_CONTENT as content, type THelloBox } from "./HelloBox.content";
 import type { TLang } from "../../data/Interfaces/IGeneral";
 
 export const HelloBox: React.FC<{ lang: TLang }> = React.memo(({ lang }) => {
-  const { h1, h2, span, button_portfolio }: THelloBox =
-    lang === "ru" ? content.en : content.ru;
+  const { h1, h2, span, button_portfolio }: THelloBox = content[lang];
   return (
     <section className={styles.general}>
       <div className={styles.general__leftBox}>

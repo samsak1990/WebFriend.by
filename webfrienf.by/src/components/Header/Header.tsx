@@ -8,7 +8,7 @@ export const Header: React.FC = () => {
   const context = useContext(LanguageContext);
   const { lang, setLang } = context;
   const iconLang: { class: string; title: string } =
-    lang === "ru"
+    lang === "en"
       ? { class: styles["header__lang-ru"], title: "Change language" }
       : { class: styles["header__lang-en"], title: "Сменить язык" };
 

@@ -1,39 +1,43 @@
-import type { IMenuList } from "./Menu.interface";
+export interface IMenuList {
+  ru: string;
+  en: string;
+  pathTo: string;
+}
 
 export const MENU_LIST: IMenuList[] = [
   {
-    nameRu: "Главная",
-    nameEn: "Home",
+    ru: "Главная",
+    en: "Home",
     pathTo: "/",
   },
   {
-    nameRu: "Услуги",
-    nameEn: "Services",
+    ru: "Услуги",
+    en: "Services",
     pathTo: "/1",
   },
   {
-    nameRu: "Кто я?",
-    nameEn: "About",
+    ru: "Кто я?",
+    en: "About",
     pathTo: "/2",
   },
   {
-    nameRu: "Навыки",
-    nameEn: "Skills",
+    ru: "Навыки",
+    en: "Skills",
     pathTo: "/3",
   },
   {
-    nameRu: "Портфолио",
-    nameEn: "Portfolio",
+    ru: "Портфолио",
+    en: "Portfolio",
     pathTo: "/4",
   },
   {
-    nameRu: "Блог",
-    nameEn: "Blog",
+    ru: "Блог",
+    en: "Blog",
     pathTo: "/blog",
   },
   {
-    nameRu: "Контакты",
-    nameEn: "Contacts",
+    ru: "Контакты",
+    en: "Contacts",
     pathTo: "/5",
   },
 ];

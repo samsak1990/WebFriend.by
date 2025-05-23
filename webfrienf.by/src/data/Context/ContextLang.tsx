@@ -6,4 +6,7 @@ interface ILanguageContext {
   setLang: (lang: TLang) => void;
 }
 
-export const LanguageContext = createContext<ILanguageContext>({ lang: 'en', setLang: () => { } });
+export const LanguageContext = createContext<ILanguageContext>({
+  lang: "ru",
+  setLang: () => {},
+});
