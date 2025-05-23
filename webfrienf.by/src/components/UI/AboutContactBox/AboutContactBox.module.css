@@ -1,3 +1,33 @@
-.contactBox{
-    border: 1px solid green;
+.contact__box {
+    position: relative;
+    padding: 10px;
+    flex: 1 1 50%;
+    margin-bottom: 20px;
+}
+
+.contact__label {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -25%;
+    left: 25px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--color-header);
+}
+
+.contact__copy {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: -50%;
+    transform: translateY(50%);
+    background: url('../../../assets/copy.svg') center/cover no-repeat;
+    cursor: copy;
+}
+
+.contact__copy.copy_wellDone {
+    background: url('../../../assets/ok.svg') center/cover no-repeat;
 }

@@ -27,7 +27,7 @@ export const SOCIAL_LIST: ISocials[] = [
     },
     {
         name: "Email",
-        http: "pasha.kozlovskij@list.ru",
+        http: "samsak.developer@internet.ru",
         image: Email
     },
 ] 
