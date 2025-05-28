@@ -18,6 +18,9 @@
 
 .about__photo {
     position: relative;
+    background: url('../../assets/wall.png') center/cover no-repeat;
+    padding-top: 50px;
+    transform: translateY(-50px);
 }
 
 .about__photo::before,
