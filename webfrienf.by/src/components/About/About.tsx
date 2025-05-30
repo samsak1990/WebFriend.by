@@ -24,7 +24,7 @@ export const About: React.FC<{ lang: TLang }> = ({ lang }) => {
                 <div className={s.about__photo}>
                     <img src={Photo} alt="Здесь должен был быть я:)" />
                 </div>
-                <div className={s.about_text}>
+                <div className={s.about__text}>
                     <div className={s.about__intro}>{content.text}</div>
                     <div className={s.about__contacts} data-copy='copy' >
                         {

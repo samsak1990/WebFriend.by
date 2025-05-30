@@ -47,7 +47,7 @@
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(185, 194, 202, .6) 25%, rgba(185, 194, 202, 1) 100%);
 }
 
-.about_text {
+.about__text {
     padding-right: 10%;
 }
 
@@ -55,6 +55,7 @@
     text-align: justify;
     line-height: 1.5;
     margin-bottom: 50px;
+    font-size: 18px;
 }
 
 .about__contacts {
