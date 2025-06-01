@@ -1,0 +1,25 @@
+.skills {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+
+.skills__text h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.skills__text p {
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+
+.skills>div {
+    flex-basis: 50%;
+    flex: 1;
+
+}

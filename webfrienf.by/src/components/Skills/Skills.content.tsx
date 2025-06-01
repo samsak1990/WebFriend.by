@@ -5,11 +5,14 @@ type TSkillsBox = {
     p: string;
 
 }
+type Skill = 'HTML' | 'CSS' | 'JavaScript' | 'TypeScript' | 'React' | 'GIT' | 'Python';
+type TSkillsLevel = Record<Skill, number>;
+
 
 export const SKILLS_CONTENT: IGeneralContent<TSkillsBox> = {
     ru: {
         h2: "О моих навыках",
-        p: "Я увлечён веб-разработкой и постоянно развиваюсь в этой сфере. Владею HTML, CSS, JavaScript, TypeScript, React, Git и Python — это мой основной стек технологий. Люблю писать чистый, оптимизированный код, создавать удобные интерфейсы и разбираться в сложных задачах.Всегда открыт к новым знаниям и интересным проектам."
+        p: "Я увлечён веб-разработкой и постоянно развиваюсь в этой сфере. Владею HTML, CSS, JavaScript, TypeScript, React, Git и Python — это мой основной стек технологий. Люблю писать чистый, оптимизированный код, создавать удобные интерфейсы и разбираться в сложных задачах. Всегда открыт к новым знаниям и интересным проектам."
 
     },
     en: {
@@ -19,20 +22,12 @@ export const SKILLS_CONTENT: IGeneralContent<TSkillsBox> = {
 };
 
 
-type TSkillsLevel = {
-    html: number,
-    css: number,
-    js: number,
-    ts: number,
-    git: number,
-    python: number
-}
-
 export const SKILLS_LEVEL: TSkillsLevel = {
-    html: 90,
-    css: 90,
-    js: 80,
-    ts: 60,
-    git: 70,
-    python: 40
-}
+    HTML: 90,
+    CSS: 90,
+    JavaScript: 80,
+    TypeScript: 50,
+    React: 70,
+    GIT: 70,
+    Python: 40
+};
