@@ -18,11 +18,16 @@
     background-color: var(--color-header)
 }
 
+.tech__icon,
 .skill__name,
 .skill__per {
     position: absolute;
     bottom: 150%;
     font-weight: bold;
+}
+
+.skill__name {
+    margin-left: 25px;
 }
 
 .skill__per {
@@ -47,4 +52,42 @@
     bottom: -10px;
     left: 40%;
     clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+}
+
+.tech__icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 150%;
+}
+
+.HTML {
+    background-image: url('../../../assets/programs/HTML.svg');
+}
+
+.CSS {
+    background-image: url('../../../assets/programs/CSS.svg');
+}
+
+.JavaScript {
+    background-image: url('../../../assets/programs/JavaScript.svg');
+}
+
+.TypeScript {
+    background-image: url('../../../assets/programs/TypeScript.svg');
+}
+
+.React {
+    background-image: url('../../../assets/programs/React.svg');
+}
+
+.GIT {
+    background-image: url('../../../assets/programs/GIT.svg');
+}
+
+.Python {
+    background-image: url('../../../assets/programs/Python.svg');
 }

@@ -1,5 +1,7 @@
 import React from 'react'
 import s from './SkillProgress.module.css'
+import '../../../assets/programs/CSS.svg'
+
 
 interface ISkillProgressProps {
     tech: string;
@@ -10,9 +12,10 @@ export const SkillProgress: React.FC<ISkillProgressProps> = ({ tech, value }) =>
     return (
         <li className={s.skill}>
             <span className={s.skill__name}>{tech}</span>
+            <span className={`${s.tech__icon} ${s[tech]}`}></span>
             <span className={s.skill__per} style={{ left: `${value}%` }}>{value}%</span>
             <div className={s.skill__progress}>
-                <div className={s.progress__value} style={{width: `${value}%`}}></div>
+                <div className={s.progress__value} style={{ width: `${value}%` }}></div>
             </div>
         </li>
     )
