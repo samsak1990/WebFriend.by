@@ -4,11 +4,13 @@ import Photo3 from '../../assets/gallary/3.webp'
 import Photo4 from '../../assets/gallary/4.webp'
 import Photo5 from '../../assets/gallary/5.webp'
 import Photo6 from '../../assets/gallary/6.webp'
-import Photo7 from '../../assets/gallary/7.jpg'
-import Photo8 from '../../assets/gallary/8.jpg'
+import Photo7 from '../../assets/gallary/7.webp'
+import Photo8 from '../../assets/gallary/8.webp'
+import Photo9 from '../../assets/gallary/9.webp'
+import Photo10 from '../../assets/gallary/10.webp'
 import type { IGeneralContent, IHeadingBox } from '../../data/Interfaces/IGeneral'
 
-interface IGallaryPhoto {
+export interface IGallaryPhoto {
     name: string,
     disc: string,
     photo: string
@@ -34,4 +36,6 @@ export const GALLARY_PHOTOS: IGallaryPhoto[] = [
     { name: 'Work6', disc: 'Subtitle', photo: Photo6 },
     { name: 'Work7', disc: 'Subtitle', photo: Photo7 },
     { name: 'Work8', disc: 'Subtitle', photo: Photo8 },
+    { name: 'Work9', disc: 'Subtitle', photo: Photo9 },
+    { name: 'Work10', disc: 'Subtitle', photo: Photo10 },
 ]
