@@ -1,6 +1,5 @@
 import React from 'react'
 import s from './SkillProgress.module.css'
-import '../../../assets/programs/CSS.svg'
 
 
 interface ISkillProgressProps {

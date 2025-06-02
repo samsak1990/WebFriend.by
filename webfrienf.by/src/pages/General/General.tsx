@@ -6,6 +6,7 @@ import { Services } from "../../components/Services/Services";
 import { LanguageContext } from "../../data/Context/ContextLang";
 import { About } from "../../components/About/About";
 import { Skills } from "../../components/Skills/Skills";
+import { Gallary } from "../../components/Gallary/Gallary";
 
 export const General: React.FC = () => {
   const context = useContext(LanguageContext);
@@ -28,6 +29,11 @@ export const General: React.FC = () => {
       <WrapperContent>
         <Skills lang={lang} />
       </WrapperContent>
+      <WrapperUnderlay>
+        <WrapperContent>
+          <Gallary lang={lang} />
+        </WrapperContent>
+      </WrapperUnderlay>
     </>
   );
 };
