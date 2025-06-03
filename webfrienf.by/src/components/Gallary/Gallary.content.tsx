@@ -11,7 +11,7 @@ import Photo10 from '../../assets/gallary/10.webp'
 import type { IGeneralContent, IHeadingBox } from '../../data/Interfaces/IGeneral'
 
 export interface IGallaryPhoto {
-    name: string,
+    id: `Work${number}`,
     disc: string,
     photo: string
 }
@@ -28,14 +28,14 @@ export const HeadingGallary: IGeneralContent<IHeadingBox> = {
 };
 
 export const GALLARY_PHOTOS: IGallaryPhoto[] = [
-    { name: 'Work1', disc: 'Subtitle', photo: Photo1 },
-    { name: 'Work2', disc: 'Subtitle', photo: Photo2 },
-    { name: 'Work3', disc: 'Subtitle', photo: Photo3 },
-    { name: 'Work4', disc: 'Subtitle', photo: Photo4 },
-    { name: 'Work5', disc: 'Subtitle', photo: Photo5 },
-    { name: 'Work6', disc: 'Subtitle', photo: Photo6 },
-    { name: 'Work7', disc: 'Subtitle', photo: Photo7 },
-    { name: 'Work8', disc: 'Subtitle', photo: Photo8 },
-    { name: 'Work9', disc: 'Subtitle', photo: Photo9 },
-    { name: 'Work10', disc: 'Subtitle', photo: Photo10 },
+    { id: 'Work1', disc: 'Subtitle', photo: Photo1 },
+    { id: 'Work2', disc: 'Subtitle', photo: Photo2 },
+    { id: 'Work3', disc: 'Subtitle', photo: Photo3 },
+    { id: 'Work4', disc: 'Subtitle', photo: Photo4 },
+    { id: 'Work5', disc: 'Subtitle', photo: Photo5 },
+    { id: 'Work6', disc: 'Subtitle', photo: Photo6 },
+    { id: 'Work7', disc: 'Subtitle', photo: Photo7 },
+    { id: 'Work8', disc: 'Subtitle', photo: Photo8 },
+    { id: 'Work9', disc: 'Subtitle', photo: Photo9 },
+    { id: 'Work10', disc: 'Subtitle', photo: Photo10 },
 ]

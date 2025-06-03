@@ -8,11 +8,18 @@ import { About } from "../../components/About/About";
 import { Skills } from "../../components/Skills/Skills";
 import { Gallary } from "../../components/Gallary/Gallary";
 
+import { useSelector } from "react-redux";
+import type { RootState } from "../../app/store";
+import { ViewProject } from "../../components/ViewProject/ViewProject";
+
 export const General: React.FC = () => {
   const context = useContext(LanguageContext);
   const { lang } = context;
+  const showProject = useSelector((state: RootState) => state.project.projectName)
+
   return (
     <>
+      {showProject && <ViewProject />}
       <WrapperUnderlay>
         <WrapperContent>
           <HelloBox lang={lang} />
