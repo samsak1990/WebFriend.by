@@ -12,11 +12,14 @@
     background-color: rgba(0, 0, 0, .7);
     cursor: zoom-out;
     overflow: auto;
-    object-position: top;
 }
 
 .viewProjectBox img {
     width: 50%;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: rgb(255, 255, 255) 0px 2px 5px -1px, rgb(255, 255, 255) 0px 1px 3px -1px;
+
 }
 
 .viewProjectBox__close {

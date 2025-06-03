@@ -1,8 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 
+type ProjectName = `Work${number}`;
+
 export interface IProgectName {
-  projectName: string
+  projectName: "" | ProjectName
 }
 
 const initialState: IProgectName = {
@@ -14,13 +16,16 @@ export const projectNameSlice = createSlice({
   initialState,
   reducers: {
     openingProject: (state, action: PayloadAction<string>) => {
-      state.projectName = action.payload
-      if(state.projectName){
+      if(/^Work\d+$/.test(action.payload)){
+        state.projectName = action.payload as ProjectName
         document.body.style.overflow = 'hidden'
-      } else document.body.style.overflow = 'scrollY'
+      } else { 
+        state.projectName = ''
+        document.body.style.overflow = 'auto'
+      }
     },
-    closeProject: (state, action: PayloadAction<string>)=>{
-      state.projectName = action.payload==='' ? action.payload : ''
+    closeProject: (state)=>{
+      state.projectName = ''
       if(!state.projectName) document.body.style.overflow = 'auto'
     },
   }

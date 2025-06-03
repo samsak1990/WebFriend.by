@@ -10,9 +10,8 @@ export const ViewProject: React.FC = () => {
     const dispatch = useDispatch()
     const [{ disc, photo }] = projects.filter(project => project.id === projectOpening)
     return (
-        <div className={s.viewProjectBox}>
+        <div className={s.viewProjectBox} onClick={() => dispatch(closeProject(''))}>
             <img src={photo} alt={disc} />
-            <button className={s.viewProjectBox__close} onClick={() => dispatch(closeProject(''))}></button>
         </div>
     )
 }

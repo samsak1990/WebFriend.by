@@ -11,6 +11,7 @@ import { Gallary } from "../../components/Gallary/Gallary";
 import { useSelector } from "react-redux";
 import type { RootState } from "../../app/store";
 import { ViewProject } from "../../components/ViewProject/ViewProject";
+import { Price } from "../../components/Price/Price";
 
 export const General: React.FC = () => {
   const context = useContext(LanguageContext);
@@ -41,6 +42,9 @@ export const General: React.FC = () => {
           <Gallary lang={lang} />
         </WrapperContent>
       </WrapperUnderlay>
+      <WrapperContent>
+        <Price lang={lang} />
+      </WrapperContent>
     </>
   );
 };
