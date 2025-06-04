@@ -1,3 +1,43 @@
-.priceBlock{
-    
+.carousel__wrapper {
+    overflow-x: hidden;
+}
+
+.carousel__cards {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel__arrow {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    bottom: -20px;
+    border-radius: 55px;
+    left: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 20px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.carousel__arrow:active {
+    box-shadow: none;
+}
+
+.carousel__arrow_left {
+    left: calc(50% - 60px);
+    background: url('../../assets/left-arrow.svg') no-repeat center/contain;
+}
+
+.carousel__arrow_right {
+    right: calc(50% - 60px);
+    background: url('../../assets/right-arrow.svg') no-repeat center/contain;
 }

@@ -13,22 +13,22 @@ export const MENU_LIST: IMenuList[] = [
   {
     ru: "Услуги",
     en: "Services",
-    pathTo: "/1",
+    pathTo: "/Services",
   },
   {
     ru: "Кто я?",
     en: "About",
-    pathTo: "/2",
+    pathTo: "/About",
   },
   {
     ru: "Навыки",
     en: "Skills",
-    pathTo: "/3",
+    pathTo: "/Skills",
   },
   {
     ru: "Портфолио",
     en: "Portfolio",
-    pathTo: "/4",
+    pathTo: "/Portfolio",
   },
   {
     ru: "Блог",
@@ -38,6 +38,6 @@ export const MENU_LIST: IMenuList[] = [
   {
     ru: "Контакты",
     en: "Contacts",
-    pathTo: "/5",
+    pathTo: "/Contacts",
   },
 ];

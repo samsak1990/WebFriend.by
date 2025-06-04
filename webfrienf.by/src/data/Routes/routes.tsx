@@ -15,7 +15,7 @@ export const routes = createBrowserRouter([
       },
       {
         path:
-          MENU_LIST.find((item) => item.nameEn === "Blog")?.pathTo || "/blog",
+          MENU_LIST.find((item) => item.en === "Blog")?.pathTo || "/blog",
         element: <Blog />,
       },
       {
