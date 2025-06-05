@@ -1,0 +1,49 @@
+.carousel {
+    position: relative;
+
+}
+
+.carousel__wrapper {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.carousel__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel__arrow {
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    bottom: -70px;
+    border-radius: 55px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 20px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.carousel__arrow:active {
+    box-shadow: none;
+}
+
+.carousel__arrow_left {
+    left: calc(50% - 60px);
+    /* left: calc(50% - 60px); */
+    background: url('../../../assets/left-arrow.svg') no-repeat center/contain;
+}
+
+.carousel__arrow_right {
+    right: calc(50% - 60px);
+    /* right: calc(50% - 60px); */
+    background: url('../../../assets/right-arrow.svg') no-repeat center/contain;
+}

@@ -12,6 +12,7 @@ import { useSelector } from "react-redux";
 import type { RootState } from "../../app/store";
 import { ViewProject } from "../../components/ViewProject/ViewProject";
 import { Price } from "../../components/Price/Price";
+import { Experience } from "../../components/Experience/Experience";
 
 export const General: React.FC = () => {
   const context = useContext(LanguageContext);
@@ -45,6 +46,11 @@ export const General: React.FC = () => {
       <WrapperContent>
         <Price lang={lang} />
       </WrapperContent>
+      <WrapperUnderlay>
+        <WrapperContent>
+          <Experience lang={lang} />
+        </WrapperContent>
+      </WrapperUnderlay>
     </>
   );
 };

@@ -51,21 +51,6 @@ const GENERAL_PRICE: TGeneralPrice = {
 export const PRICE_MAIN_SERVICES: IGeneralContent<IPriceContent[]> = {
     ru: [
         {
-            name: "Лендинг",
-            priceMin: GENERAL_PRICE.sites.landing.min,
-            priceMax: GENERAL_PRICE.sites.landing.max,
-            time: "от 3 до 7 дней",
-            include: [
-                "Адаптивная верстка",
-                "До 5 блоков",
-                "Форма обратной связи",
-                "Простые анимации (CSS, AOS)",
-                "Подключение карты",
-                "Базовая SEO-структура"
-            ],
-            top: true
-        },
-        {
             name: "Сайт-визитка",
             priceMin: GENERAL_PRICE.sites.Business.min,
             priceMax: GENERAL_PRICE.sites.Business.max,
@@ -90,6 +75,21 @@ export const PRICE_MAIN_SERVICES: IGeneralContent<IPriceContent[]> = {
                 "Headless CMS (при необходимости)",
                 "Hover-эффекты"
             ]
+        },
+        {
+            name: "Лендинг",
+            priceMin: GENERAL_PRICE.sites.landing.min,
+            priceMax: GENERAL_PRICE.sites.landing.max,
+            time: "от 3 до 7 дней",
+            include: [
+                "Адаптивная верстка",
+                "До 5 блоков",
+                "Форма обратной связи",
+                "Простые анимации (CSS, AOS)",
+                "Подключение карты",
+                "Базовая SEO-структура"
+            ],
+            top: true
         },
         {
             name: "Промо-сайт",
@@ -122,21 +122,7 @@ export const PRICE_MAIN_SERVICES: IGeneralContent<IPriceContent[]> = {
 
     ],
     en: [
-        {
-            name: "Landing",
-            priceMin: GENERAL_PRICE.sites.landing.min,
-            priceMax: GENERAL_PRICE.sites.landing.max,
-            time: "3 to 7 days",
-            include: [
-                "Responsive layout",
-                "Up to 5 sections",
-                "Contact form",
-                "Simple animations (CSS, AOS)",
-                "Map integration",
-                "Basic SEO structure"
-            ],
-            top: true
-        },
+
         {
             name: "Business Card",
             priceMin: GENERAL_PRICE.sites.Business.min,
@@ -162,6 +148,21 @@ export const PRICE_MAIN_SERVICES: IGeneralContent<IPriceContent[]> = {
                 "Optional Headless CMS",
                 "Hover effects"
             ]
+        },
+        {
+            name: "Landing",
+            priceMin: GENERAL_PRICE.sites.landing.min,
+            priceMax: GENERAL_PRICE.sites.landing.max,
+            time: "3 to 7 days",
+            include: [
+                "Responsive layout",
+                "Up to 5 sections",
+                "Contact form",
+                "Simple animations (CSS, AOS)",
+                "Map integration",
+                "Basic SEO structure"
+            ],
+            top: true
         },
         {
             name: "Promo",
