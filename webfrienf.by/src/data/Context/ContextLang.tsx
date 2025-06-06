@@ -7,6 +7,6 @@ interface ILanguageContext {
 }
 
 export const LanguageContext = createContext<ILanguageContext>({
-  lang: "ru",
-  setLang: () => {},
+  lang: "en",
+  setLang: () => { },
 });

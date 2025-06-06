@@ -7,7 +7,7 @@ interface ILangProps {
 }
 
 export const LanguageProvider = ({ children }: ILangProps) => {
-    const [lang, setLang] = useState<TLang>(localStorage.getItem('lang') as TLang || 'en')
+    const [lang, setLang] = useState<TLang>(localStorage.getItem('lang') as TLang || 'ru')
 
     const memoLang = useMemo(() => ({ lang, setLang }), [lang])
 

@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import type { TLang } from '../../data/Interfaces/IGeneral'
 import s from './Price.module.css'
 import { ArticleTitle } from '../UI/ArticleTitle/ArticleTitle'
 import { PRICE_MAIN_SERVICES, PRICE_EXTRA_SERVICES } from './Price.content'
 import { PRICE_HEADING as head } from './Price.content'
-import { SiteCard } from '../UI/SiteCard/SiteCArd'
+import { SiteCard } from '../UI/SiteCard/SiteCard'
 import { Carousel } from '../UI/Carousel/Carousel'
 import { TabelExtraServices } from '../UI/TableExtraServices/TableExtraServices'
 
@@ -16,9 +16,9 @@ export const Price: React.FC<{ lang: TLang }> = ({ lang }) => {
     return (
         <>
             <ArticleTitle text={head[lang]} />
-            <Carousel listData={listSites} cardWidth={320} renderCard={(item) => <SiteCard key={item.name} content={item} />} />
+            <Carousel listData={listSites} cardWidth={300} renderCard={(item) => <SiteCard key={item.name} content={item} />} />
             <section className={s.tablelExtra}>
-                <TabelExtraServices listEstra={listEstra} />
+                <TabelExtraServices listEstra={listEstra} lang={lang} />
             </section>
         </>
 

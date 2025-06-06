@@ -119,7 +119,6 @@ export const PRICE_MAIN_SERVICES: IGeneralContent<IPriceContent[]> = {
                 "Подходит для витрин без CMS"
             ]
         },
-
     ],
     en: [
 

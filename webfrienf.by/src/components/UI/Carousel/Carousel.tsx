@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import s from './Carousel.module.css'
 import type { IPriceContent } from '../../Price/Price.content';
-import type { TContentSiteCards } from '../SiteCard/SiteCArd';
 
 interface ICarouselProps {
     listData: IPriceContent[]; // Замените 'any' на тип данных, который вы будете использовать
@@ -10,14 +9,15 @@ interface ICarouselProps {
 }
 
 export const Carousel: React.FC<ICarouselProps> = ({ listData, cardWidth, renderCard }) => {
-    const [offset, setOffset] = useState(cardWidth);
+    const [offset, setOffset] = useState(0);
 
     const handleArrowClick = (direction: 'left' | 'right') => {
-        const maxOffset = (listData.length - 4) * cardWidth; // Adjust based on the number of cards visible
-        if (direction === 'left') {
-            setOffset(prev => Math.max(prev - cardWidth, 0));
-        } else {
-            setOffset(prev => Math.min(prev + cardWidth, maxOffset));
+        const visibleCards = 4;
+        const maxOffset = (listData.length - visibleCards) * cardWidth; // Adjust based on the number of cards visible
+        if (direction === 'left' && offset > 0) {
+            setOffset(prev => prev - cardWidth);
+        } else if (direction === 'right' && offset < maxOffset) {
+            setOffset(prev => prev + cardWidth);
         }
     };
 

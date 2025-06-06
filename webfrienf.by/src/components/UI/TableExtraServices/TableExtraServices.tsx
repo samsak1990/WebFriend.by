@@ -1,21 +1,48 @@
 import React from 'react'
 import s from './TableExtraServices.module.css'
 import type { IPriceContent } from '../../Price/Price.content'
+import type { IGeneralContent, TLang } from '../../../data/Interfaces/IGeneral'
 
+type TTitleCell = {
+    tableName: string,
+    servName: string,
+    cost: string,
+    time: string,
+    includes: string
+}
 
-export const TabelExtraServices: React.FC<{ listEstra: IPriceContent[] }> = ({ listEstra }) => {
+const TABLE_HEADING: IGeneralContent<TTitleCell> = {
+    ru: {
+        tableName: 'Дополнительные услуги',
+        servName: 'Услуга',
+        cost: 'Стоимость руб.',
+        time: 'Время выполнения',
+        includes: 'Включает'
+    },
+    en:
+    {
+        tableName: 'Additional services',
+        servName: 'Sevrice',
+        cost: 'Cost (ruble)',
+        time: 'Lead time',
+        includes: 'Includes'
+    }
+}
+
+export const TabelExtraServices: React.FC<{ listEstra: IPriceContent[], lang: TLang }> = ({ listEstra, lang }) => {
+    const headingTable = TABLE_HEADING[lang]
     return (
         <div className={s.table_container}>
             <table className={s.table_wrapper}>
                 <thead>
                     <tr>
-                        <th className={s.table_header} colSpan="4">Дополнительные услуги</th>
+                        <th className={s.table_header} colSpan={4}>{headingTable.tableName}</th>
                     </tr>
                     <tr>
-                        <th>Услуга</th>
-                        <th>Стоимость руб.</th>
-                        <th>Время выполнения</th>
-                        <th>Включает</th>
+                        <th>{headingTable.servName}</th>
+                        <th>{headingTable.cost}</th>
+                        <th>{headingTable.time}</th>
+                        <th>{headingTable.includes}</th>
                     </tr>
                 </thead>
                 <tbody className={s.table_body}>

@@ -1,0 +1,13 @@
+.experienceBox {
+    text-align: center;
+    width: clamp(100px, 10%, 200px);
+}
+
+.experienceBox>img {
+    width: 70%;
+}
+
+.experienceBox>p {
+    font-size: 50px;
+    font-weight: bold;
+}
