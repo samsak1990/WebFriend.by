@@ -14,7 +14,7 @@ export const ProjectBox: React.FC<IProjectBoxProps> = React.memo(({ photo, index
     const dispatch = useDispatch()
     return (
         <div className={`${s[`div${index + 1}`]} ${s.box__photo}`} onClick={() => dispatch(openingProject(photo.id))}>
-            <img src={photo.photo} alt={photo.id} />
+            <img src={photo.photo} alt={photo.id} loading="lazy" />
         </div>
     )
 })

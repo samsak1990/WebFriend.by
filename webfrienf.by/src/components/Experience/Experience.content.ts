@@ -1,6 +1,6 @@
 import type { IGeneralContent } from "../../data/Interfaces/IGeneral"
 import ClientsImg from '../../assets/experience/clients.svg'
-import ProjectsImg from '../../assets/experience/project.svg'
+import ProjectsImg from '../../assets/experience/projects.svg'
 import YearsImg from '../../assets/experience/years.svg'
 
 export type TExperienceContent = {

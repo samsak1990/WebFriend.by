@@ -10,7 +10,7 @@ import { Gallary } from "../../components/Gallary/Gallary";
 
 import { useSelector } from "react-redux";
 import type { RootState } from "../../app/store";
-import { ViewProject } from "../../components/ViewProject/ViewProject";
+import { ViewProject } from "../../components/UI/ViewProject/ViewProject";
 import { Price } from "../../components/Price/Price";
 import { Experience } from "../../components/Experience/Experience";
 

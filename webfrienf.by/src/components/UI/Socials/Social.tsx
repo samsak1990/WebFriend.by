@@ -10,7 +10,7 @@ interface ISocialProp {
 export const Social: React.FC<ISocialProp> = ({ data }) => {
     return (
         <div className={styles.socialLink}>
-            <NavLink to={data.http}><img src={data.image} alt={data.name} title={data.name} /></NavLink>
+            <NavLink to={data.http}><img loading="lazy" src={data.image} alt={data.name} title={data.name} /></NavLink>
         </div>
     )
 }

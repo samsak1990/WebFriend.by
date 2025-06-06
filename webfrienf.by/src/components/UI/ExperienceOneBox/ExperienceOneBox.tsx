@@ -9,7 +9,7 @@ type TExperienceOneBoxProps = {
 export const ExperienceOneBox: React.FC<TExperienceOneBoxProps> = ({ data }) => {
     return (
         <div className={s.experienceBox}>
-            <img src={data.image} alt={data.title} />
+            <img src={data.image} alt={data.title} loading="lazy" />
             <p>{data.count}</p>
             <h3>{data.title}</h3>
         </div>

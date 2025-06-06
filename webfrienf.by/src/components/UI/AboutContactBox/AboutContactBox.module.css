@@ -3,10 +3,12 @@
     padding: 10px;
     flex: 1 1 50%;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .contact__label {
-    content: '';
     position: absolute;
     display: block;
     top: -25%;
@@ -14,6 +16,13 @@
     text-transform: capitalize;
     font-weight: bold;
     color: var(--color-header);
+    font-size: 0.9rem;
+}
+
+.contact__value {
+    margin-left: 25px;
+    word-break: break-word;
+    color: var(--color-text);
 }
 
 .contact__copy {
@@ -25,9 +34,65 @@
     top: -50%;
     transform: translateY(50%);
     background: url('../../../assets/copy.svg') center/cover no-repeat;
-    cursor: copy;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact__copy:hover {
+    transform: translateY(50%) scale(1.1);
+}
+
+.contact__copy:focus {
+    outline: 2px solid var(--color-header);
+    outline-offset: 2px;
+    border-radius: 4px;
 }
 
 .contact__copy.copy_wellDone {
     background: url('../../../assets/ok.svg') center/cover no-repeat;
+    animation: successPulse 0.5s ease-in-out;
+}
+
+.contact__error {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-error, #ff4444);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+@keyframes successPulse {
+    0% {
+        transform: translateY(50%) scale(1);
+    }
+
+    50% {
+        transform: translateY(50%) scale(1.2);
+    }
+
+    100% {
+        transform: translateY(50%) scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__box {
+        flex: 1 1 100%;
+    }
+
+    .contact__label {
+        font-size: 0.8rem;
+    }
+
+    .contact__value {
+        font-size: 0.9rem;
+    }
 }
