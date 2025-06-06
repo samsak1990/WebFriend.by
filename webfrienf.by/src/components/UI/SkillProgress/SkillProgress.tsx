@@ -7,9 +7,9 @@ interface ISkillProgressProps {
     value: number;
 }
 
-export const SkillProgress: React.FC<ISkillProgressProps> = ({ tech, value }) => {
+export const SkillProgress: React.FC<ISkillProgressProps> = React.memo(({ tech, value }) => {
     return (
-        <li className={s.skill}>
+        <li className={s.skill} aria-label={`Level of ${tech} skill: ${value}%`}>
             <span className={s.skill__name}>{tech}</span>
             <span className={`${s.tech__icon} ${s[tech]}`}></span>
             <span className={s.skill__per} style={{ left: `${value}%` }}>{value}%</span>
@@ -18,4 +18,4 @@ export const SkillProgress: React.FC<ISkillProgressProps> = ({ tech, value }) =>
             </div>
         </li>
     )
-}
+})

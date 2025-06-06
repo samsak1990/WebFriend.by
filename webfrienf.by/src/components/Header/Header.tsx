@@ -19,10 +19,12 @@ export const Header: React.FC = () => {
         <Menu />
         <button
           title={iconLang.title}
-          className={[styles.header__lang, iconLang.class].join(" ")}
+          className={`${styles.header__lang} ${iconLang.class}`}
           onClick={() => setLang(lang === "ru" ? "en" : "ru")}
         ></button>
       </div>
     </header>
   );
 };
+
+Header.displayName = "Header";

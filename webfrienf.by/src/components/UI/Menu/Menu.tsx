@@ -9,8 +9,8 @@ export const Menu: React.FC = () => {
   const { lang } = useContext(LanguageContext);
   return (
     <menu className={styles.header__menu}>
-      {MENU_LIST.map((link, index) => (
-        <li key={index}>
+      {MENU_LIST.map((link) => (
+        <li key={link.pathTo}>
           <NavLink
             to={link.pathTo}
             className={({ isActive }) => (isActive ? styles["active"] : "")}
@@ -27,3 +27,5 @@ export const Menu: React.FC = () => {
     </menu>
   );
 };
+
+Menu.displayName = "Menu";

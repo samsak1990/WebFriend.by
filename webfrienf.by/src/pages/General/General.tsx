@@ -13,10 +13,10 @@ import type { RootState } from "../../app/store";
 import { ViewProject } from "../../components/UI/ViewProject/ViewProject";
 import { Price } from "../../components/Price/Price";
 import { Experience } from "../../components/Experience/Experience";
+import { Feedbacks } from "../../components/Feedbacks/Feedbacks";
 
 export const General: React.FC = () => {
-  const context = useContext(LanguageContext);
-  const { lang } = context;
+  const { lang } = useContext(LanguageContext);
   const showProject = useSelector((state: RootState) => state.project.projectName)
 
   return (
@@ -51,6 +51,9 @@ export const General: React.FC = () => {
           <Experience lang={lang} />
         </WrapperContent>
       </WrapperUnderlay>
+      <WrapperContent>
+        <Feedbacks lang={lang} />
+      </WrapperContent>
     </>
   );
 };

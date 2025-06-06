@@ -8,6 +8,10 @@ import { SkillProgress } from '../UI/SkillProgress/SkillProgress'
 
 export const Skills: React.FC<{ lang: TLang }> = ({ lang }) => {
     const data = content[lang]
+    if (!data) {
+        return null;
+    }
+
     return (
         <section className={s.skills}>
             <div className={s.skills__text}>
@@ -24,3 +28,5 @@ export const Skills: React.FC<{ lang: TLang }> = ({ lang }) => {
         </section>
     )
 }
+
+Skills.displayName = 'Skills'

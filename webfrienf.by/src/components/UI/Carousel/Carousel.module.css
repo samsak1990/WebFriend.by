@@ -24,26 +24,26 @@
     display: inline-block;
     width: 50px;
     height: 50px;
-    bottom: -70px;
+    bottom: -50px;
     border-radius: 55px;
-    transform: translateY(-50%);
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 20px;
-    transition: box-shadow 0.2s ease-in-out;
+    /* box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 20px; */
+    transition: filter 0.1s ease-in-out;
+    background: url('../../../assets/arrow_carousel.svg') no-repeat center/contain;
+    filter: drop-shadow(5px 0 5px rgba(0, 0, 0, 0.5));
 }
 
 .carousel__arrow:active {
-    box-shadow: none;
+    filter: drop-shadow(5px 0 5px rgba(0, 0, 0, 0)) brightness(0.8);
+    ;
 }
 
 .carousel__arrow_left {
+    transform: rotate(180deg);
     left: calc(50% - 60px);
-    /* left: calc(50% - 60px); */
-    background: url('../../../assets/left-arrow.svg') no-repeat center/contain;
+
 }
 
 .carousel__arrow_right {
     right: calc(50% - 60px);
-    /* right: calc(50% - 60px); */
-    background: url('../../../assets/right-arrow.svg') no-repeat center/contain;
 }

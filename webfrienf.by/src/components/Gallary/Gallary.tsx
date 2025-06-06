@@ -9,11 +9,11 @@ export const Gallary: React.FC<{ lang: TLang }> = ({ lang }) => {
 
 
     return (
-        <section className={s.gallary}>
+        <section className={s.gallary} aria-label="Project Photo Gallery">
             <ArticleTitle text={HeadingGallary[lang]} />
             <div className={s.gallary__box}>
                 {photos.map((photo, index) => (
-                    <ProjectBox key={`${index}-${photo.id}`} photo={photo} index={index} />
+                    <ProjectBox key={photo.id} photo={photo} index={index}/>
                 ))}
 
             </div>
