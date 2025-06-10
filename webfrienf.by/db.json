@@ -1,0 +1,39 @@
+{
+  "feedbacks": [
+    {
+      "id": "1",
+      "username": "Brand Nox",
+      "avatar": "https://i.pinimg.com/originals/d8/0c/f0/d80cf0ad99d12c94be2cbee4ca4658ef.jpg",
+      "comment": "This is a sample feedback text. It can be replaced with actual user feedback.",
+      "siteType": "Landing"
+    },
+    {
+      "id": "2",
+      "username": "Lena Sparks",
+      "avatar": "https://static10.tgstat.ru/channels/_0/34/3492faf7b6c422905703c095c2889b51.jpg",
+      "comment": "Amazing work! The design is clean and user-friendly.",
+      "siteType": "E-commerce"
+    },
+    {
+      "id": "3",
+      "username": "Mike Thunder",
+      "avatar": "https://yt3.googleusercontent.com/ytc/AOPolaQuQVWoEveKKj5bahbvxrTtoGMH3FaucuQT6bWHqg=s900-c-k-c0x00ffffff-no-rj",
+      "comment": "Great responsiveness! Works perfectly on all devices.",
+      "siteType": "Portfolio"
+    },
+    {
+      "id": "4",
+      "username": "Sophia Moon",
+      "avatar": "https://goods-photos.static1-sima-land.com/items/4018643/0/1600.jpg?v=1572445032",
+      "comment": "The animations are smooth and engaging. Love it!",
+      "siteType": "Blog"
+    },
+    {
+      "id": "5",
+      "username": "Daniel Frost",
+      "avatar": "https://avatars.mds.yandex.net/get-yapic/15430/GS56CWUd3Lx27FpHNPvUTzzDhU-1/orig",
+      "comment": "Fast loading speed and great UI/UX. Highly recommended!",
+      "siteType": "Corporate"
+    }
+  ]
+}
