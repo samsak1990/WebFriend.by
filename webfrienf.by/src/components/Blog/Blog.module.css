@@ -1,0 +1,32 @@
+.blog {
+    width: 100%;
+    padding-bottom: 70px;
+}
+
+.blog__wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.blog__btnShowAll {
+    display: block;
+    border: 2px solid var(--color-header);
+    border-radius: 25px;
+    max-width: 200px;
+    padding: 20px 30px;
+    transition: background .3s ease-in-out, color .3s ease-in-out;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 30px auto 0 auto;
+}
+
+.blog__btnShowAll:hover {
+    background-color: var(--color-header);
+    color: var(--color-subHeader)
+}
