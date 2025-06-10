@@ -12,6 +12,7 @@
   src: url('../src/assets/Fonts/Headers/Alfa_Slab_One/AlfaSlabOne-Regular.ttf');
   font-weight: normal;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -19,12 +20,14 @@
   src: url('../src/assets/Fonts/Content/PT_Sans/PTSans-Regular.ttf');
   font-weight: normal;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
   font-family: 'Content-bold';
   src: url('../src/assets/Fonts/Content/PT_Sans/PTSans-Bold.ttf');
   font-weight: bold;
+  font-display: fallback;
 }
 
 @font-face {
@@ -32,6 +35,7 @@
   src: url('../src/assets/Fonts/Content/PT_Sans/PTSans-Italic.ttf');
   font-weight: normal;
   font-style: italic;
+  font-display: fallback;
 }
 
 

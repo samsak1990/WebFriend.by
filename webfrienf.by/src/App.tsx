@@ -7,6 +7,7 @@ import { useScroll, motion } from "framer-motion";
 
 export const App: React.FC = () => {
   const { scrollYProgress } = useScroll()
+
   return (
     <>
       <Provider store={store}>

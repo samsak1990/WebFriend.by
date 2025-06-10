@@ -6,7 +6,10 @@ import { Gallary } from "../../components/Gallary/Gallary";
 import { Price } from "../../components/Price/Price";
 import { Experience } from "../../components/Experience/Experience";
 import { Feedbacks } from "../../components/Feedbacks/Feedbacks";
+import { Blog } from "../../components/Blog/Blog";
+
 import type { TLang } from "../Interfaces/IGeneral";
+
 
 
 export const AppStructure: React.ComponentType<{lang: TLang}>[] = [
@@ -18,4 +21,5 @@ export const AppStructure: React.ComponentType<{lang: TLang}>[] = [
     Price,
     Experience,
     Feedbacks,
+    Blog
   ] 
