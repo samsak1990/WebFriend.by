@@ -1,0 +1,92 @@
+.formContact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.formContact,
+.formContact__firstLine {
+    gap: 40px;
+}
+
+.formContact>div {
+    display: flex;
+    min-width: 300px;
+}
+
+.formContact>div input,
+.formContact>div textarea {
+    flex: 1 1 100%;
+    padding: 20px;
+    background-color: var(--color-background);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.formContact input,
+.formContact textarea {
+    position: relative;
+}
+
+.formContact input:focus,
+.formContact textarea:focus {
+    outline: 1px solid var(--color-text);
+}
+
+.formContact__firstLine {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.formContact__firstLine>div {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 300px;
+}
+
+.formContact__firstLine>div>input {
+    width: 100%;
+}
+
+.formContact__thirdLine>textarea {
+    min-height: 200px;
+}
+
+.formContact__button {
+    display: block;
+    border: 2px solid var(--color-header);
+    border-radius: 25px;
+    max-width: 200px;
+    padding: 20px 30px;
+    transition: background .3s ease-in-out, color .3s ease-in-out;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 30px auto 0 auto;
+}
+
+.formContact__button:hover,
+.formContact__button:focus {
+    background-color: var(--color-header);
+    color: var(--color-subHeader)
+}
+
+.inputWrapper {
+    position: relative;
+}
+
+.inputWrapper.error {
+    outline: 2px solid var(--color-header);
+    border-radius: 6px;
+}
+
+.error_input {
+    position: absolute;
+    font-weight: 50px;
+    color: var(--color-header);
+    z-index: 999;
+    top: -20px;
+    left: 10px;
+}

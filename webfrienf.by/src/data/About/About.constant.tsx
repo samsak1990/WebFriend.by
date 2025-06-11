@@ -1,3 +1,4 @@
+import type { IGeneralContent } from "../Interfaces/IGeneral";
 import { SOCIAL_LIST } from "../Socials/Socials";
 
 
@@ -6,7 +7,8 @@ export type TAboutConstant = {
     linkedIn: string,
     telegram: string,
     instargam: string,
-    phone: string
+    phone: string,
+    locate: IGeneralContent<string>
 }
 
 export const ABOUT_CONSTANT: TAboutConstant = {
@@ -14,5 +16,8 @@ export const ABOUT_CONSTANT: TAboutConstant = {
     linkedIn: 'Pavel Kozlovski',
     telegram: '@whoIsPavelK',
     instargam: "@webfriend.by",
-    phone: '+375-29-647-25-67'
+    phone: '+375-29-647-25-67',
+    locate: {
+        ru: 'Минск, Беларусь', en: 'Minsk, Belarus'
+    }
 }
