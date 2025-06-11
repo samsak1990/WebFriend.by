@@ -14,14 +14,14 @@ import type { TLang } from "../Interfaces/IGeneral";
 
 
 export const AppStructure: React.ComponentType<{lang: TLang}>[] = [
-    // HelloBox,
-    // Services,
-    // About,
-    // Skills,
-    // Gallary,
-    // Price,
-    // Experience,
-    // Feedbacks,
-    // Blog,
+    HelloBox,
+    Services,
+    About,
+    Skills,
+    Gallary,
+    Price,
+    Experience,
+    Feedbacks,
+    Blog,
     Form,
   ] 

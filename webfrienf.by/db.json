@@ -36,59 +36,83 @@
       "siteType": "Corporate"
     }
   ],
-  "posts":[
-  {
-    "id": 1,
-    "title": "Оптимизация состояния в React: лучшие практики",
-    "slug": "react-state-management",
-    "summary": "Разбираем подходы к управлению состоянием в React: от использования useState до сложных решений на базе Redux и Zustand.",
-    "tags": ["React", "Redux", "Zustand", "hooks"],
-    "author": "Паша",
-    "date": "2025-06-10",
-    "image": "https://example.com/images/react-state-management.jpg"
-  },
-  {
-    "id": 2,
-    "title": "Как улучшить стилизацию с CSS-псевдоэлементами",
-    "slug": "css-pseudo-elements",
-    "summary": "Псевдоэлементы ::before и ::after позволяют создавать сложные UI-эффекты без лишнего HTML-кода. Показываем креативные способы их использования.",
-    "tags": ["CSS", "псевдоэлементы", "UI", "анимации"],
-    "author": "Паша",
-    "date": "2025-06-10",
-    "image": "https://example.com/images/css-pseudo-elements.jpg"
-  },
-  {
-    "id": 3,
-    "title": "Next.js: преимущества и подводные камни Server-side Rendering",
-    "slug": "nextjs-ssr",
-    "summary": "Исследуем, как SSR в Next.js улучшает SEO и UX, а также нюансы его использования в реальных проектах.",
-    "tags": ["Next.js", "SSR", "SEO", "React"],
-    "author": "Паша",
-    "date": "2025-06-10",
-    "image": "https://example.com/images/nextjs-ssr.jpg"
-  },
-  {
-    "id": 4,
-    "title": "Как повысить качество кода с TypeScript: советы и примеры",
-    "slug": "typescript-best-practices",
-    "summary": "Использование TypeScript может существенно повысить надежность кода. Рассказываем о типизации, интерфейсах и лучших практиках.",
-    "tags": ["TypeScript", "типизация", "React", "оптимизация"],
-    "author": "Паша",
-    "date": "2025-06-10",
-    "image": "https://example.com/images/typescript-best-practices.jpg"
-  },
-  {
-    "id": 5,
-    "title": "Создаем адаптивные сетки с CSS Grid: пошаговое руководство",
-    "slug": "css-grid-layout",
-    "summary": "Подробно разбираем CSS Grid, динамическое изменение колонок и рядов, а также примеры реализации сложных макетов.",
-    "tags": ["CSS", "Grid", "адаптивность", "макеты"],
-    "author": "Паша",
-    "date": "2025-06-10",
-    "image": "https://example.com/images/css-grid-layout.jpg"
-  }
-],
-"messages":[]
-
-
+  "posts": [
+    {
+      "id": 1,
+      "title": "Оптимизация состояния в React: лучшие практики",
+      "slug": "react-state-management",
+      "summary": "Разбираем подходы к управлению состоянием в React: от использования useState до сложных решений на базе Redux и Zustand.",
+      "tags": [
+        "React",
+        "Redux",
+        "Zustand",
+        "hooks"
+      ],
+      "author": "Паша",
+      "date": "2025-06-10",
+      "image": "https://example.com/images/react-state-management.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Как улучшить стилизацию с CSS-псевдоэлементами",
+      "slug": "css-pseudo-elements",
+      "summary": "Псевдоэлементы ::before и ::after позволяют создавать сложные UI-эффекты без лишнего HTML-кода. Показываем креативные способы их использования.",
+      "tags": [
+        "CSS",
+        "псевдоэлементы",
+        "UI",
+        "анимации"
+      ],
+      "author": "Паша",
+      "date": "2025-06-10",
+      "image": "https://example.com/images/css-pseudo-elements.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Next.js: преимущества и подводные камни Server-side Rendering",
+      "slug": "nextjs-ssr",
+      "summary": "Исследуем, как SSR в Next.js улучшает SEO и UX, а также нюансы его использования в реальных проектах.",
+      "tags": [
+        "Next.js",
+        "SSR",
+        "SEO",
+        "React"
+      ],
+      "author": "Паша",
+      "date": "2025-06-10",
+      "image": "https://example.com/images/nextjs-ssr.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Как повысить качество кода с TypeScript: советы и примеры",
+      "slug": "typescript-best-practices",
+      "summary": "Использование TypeScript может существенно повысить надежность кода. Рассказываем о типизации, интерфейсах и лучших практиках.",
+      "tags": [
+        "TypeScript",
+        "типизация",
+        "React",
+        "оптимизация"
+      ],
+      "author": "Паша",
+      "date": "2025-06-10",
+      "image": "https://example.com/images/typescript-best-practices.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Создаем адаптивные сетки с CSS Grid: пошаговое руководство",
+      "slug": "css-grid-layout",
+      "summary": "Подробно разбираем CSS Grid, динамическое изменение колонок и рядов, а также примеры реализации сложных макетов.",
+      "tags": [
+        "CSS",
+        "Grid",
+        "адаптивность",
+        "макеты"
+      ],
+      "author": "Паша",
+      "date": "2025-06-10",
+      "image": "https://example.com/images/css-grid-layout.jpg"
+    }
+  ],
+  "messages": [
+  ]
 }

@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useForm } from 'react-hook-form'
 import s from './FormContact.module.css'
 import { type IFormAreas } from '../../Form/Form.content'
-import { useForm } from 'react-hook-form'
+import { useSendUserMessage } from '../../../Hooks/sendUserMessage/useSendUserMessage'
+import { useDispatch } from 'react-redux'
+import { showMessage } from '../../../features/showResultSendingMessageSlice'
+import type { AppDispatch } from '../../../app/store'
 
-type TFormDataSending = {
+export type TFormDataSending = {
     email: string,
     message: string,
     name: string,
@@ -11,10 +15,18 @@ type TFormDataSending = {
 }
 
 export const FormContact: React.FC<{ data: IFormAreas }> = ({ data }) => {
-    const { register, handleSubmit, formState: { errors } } = useForm<TFormDataSending>({ mode: 'onBlur' })
+    const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm<TFormDataSending>({ mode: 'onBlur' })
+    const sendUserMessage = useSendUserMessage()
+    const dispatch = useDispatch<AppDispatch>()
 
-    const handleSubmitFromContact = (userData: TFormDataSending) => {
-        console.log(userData)
+    const handleSubmitFromContact = async (userData: TFormDataSending) => {
+        const result = await sendUserMessage(userData)
+        if (result?.status === 201) {
+            dispatch(showMessage(true))
+            // reset()
+        } else {
+            dispatch(showMessage(false))
+        }
     }
 
     return (
@@ -32,6 +44,7 @@ export const FormContact: React.FC<{ data: IFormAreas }> = ({ data }) => {
                         })}
                         type="text"
                         placeholder={data.name}
+                        autoComplete="off"
                     />
                     {errors.name && <p className={s.error_input}>{errors.name.message as string}</p>}
                 </div>
@@ -47,6 +60,7 @@ export const FormContact: React.FC<{ data: IFormAreas }> = ({ data }) => {
                         })}
                         type="email"
                         placeholder={data.email}
+                        autoComplete="off"
                     />
                     {errors.email && <p className={s.error_input}>{errors.email.message as string}</p>}
                 </div>
@@ -63,6 +77,7 @@ export const FormContact: React.FC<{ data: IFormAreas }> = ({ data }) => {
                     })}
                     type="text"
                     placeholder={data.subject}
+                    autoComplete="off"
                 />
                 {errors.subject && <p className={s.error_input}>{errors.subject.message as string}</p>}
             </div>
@@ -77,11 +92,13 @@ export const FormContact: React.FC<{ data: IFormAreas }> = ({ data }) => {
                         }
                     })
                     }
-                    placeholder={data.message} />
+                    placeholder={data.message}
+                    autoComplete="off"
+                />
                 {errors.message && <p className={s.error_input}>{errors.message.message as string}</p>}
             </div>
 
-            <button className={s.formContact__button} type='submit'>{data.button}</button>
+            <button className={s.formContact__button} disabled={isSubmitting} type='submit'>{isSubmitting ? "Sending..." : data.button}</button>
         </form >
     )
 }

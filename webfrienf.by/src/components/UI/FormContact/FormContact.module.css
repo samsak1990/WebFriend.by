@@ -19,7 +19,7 @@
 .formContact>div textarea {
     flex: 1 1 100%;
     padding: 20px;
-    background-color: var(--color-background);
+    background-color: var(--bg-underlay) !important;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
@@ -27,6 +27,7 @@
 .formContact input,
 .formContact textarea {
     position: relative;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .formContact input:focus,
@@ -53,6 +54,28 @@
     min-height: 200px;
 }
 
+.inputWrapper {
+    position: relative;
+}
+
+.inputWrapper.error {
+    outline: 2px solid var(--color-header);
+    border-radius: 6px;
+}
+
+.inputWrapper.error>input:focus {
+    outline: none;
+}
+
+.error_input {
+    position: absolute;
+    font-weight: 50px;
+    color: var(--color-header);
+    z-index: 999;
+    top: -20px;
+    left: 10px;
+}
+
 .formContact__button {
     display: block;
     border: 2px solid var(--color-header);
@@ -71,22 +94,4 @@
 .formContact__button:focus {
     background-color: var(--color-header);
     color: var(--color-subHeader)
-}
-
-.inputWrapper {
-    position: relative;
-}
-
-.inputWrapper.error {
-    outline: 2px solid var(--color-header);
-    border-radius: 6px;
-}
-
-.error_input {
-    position: absolute;
-    font-weight: 50px;
-    color: var(--color-header);
-    z-index: 999;
-    top: -20px;
-    left: 10px;
 }
